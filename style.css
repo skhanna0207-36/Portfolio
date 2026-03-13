@@ -1,0 +1,259 @@
+/* Basic reset and body styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* Container for content */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Header styling */
+header {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+nav {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    background-color: #34495e;
+}
+
+/* Section styling */
+section {
+    margin-bottom: 60px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+/* Intro section */
+.intro {
+    text-align: center;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 20px 0;
+}
+
+.profile-image {
+    width: 180px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    border: 2px solid #333;
+}
+
+.intro p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+/* Content sections */
+.content {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.content p {
+    margin-bottom: 15px;
+}
+
+/* Lists styling */
+.strategy-list, .insights-list, .company-list, .top-companies {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+/* Table styling */
+.company-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.company-table th,
+.company-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.company-table th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.company-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Trading stats */
+.trading-stats {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.trading-stats p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.trading-stats span {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Calculator section */
+.calculator-section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.calculator input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.calculator button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.calculator button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #f0f8ff;
+    font-weight: bold;
+}
+
+/* Contact section */
+.contact-info {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .container {
+        padding: 20px;
+    }
+}
